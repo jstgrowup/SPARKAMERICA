@@ -5,7 +5,7 @@ export default function PeopleOne() {
     return (
         <>
             <Center w={"100%"} minH={"853px"} mt="100px" border={"2px"} borderColor="solid purple"  >
-                <Box maxW={"90%"} maxH="853px" minH={"700px"} >
+                <Box maxW={"90%"}  minH={"700px"} >
                     <SimpleGrid columns={[1, null, 2]} >
                         <Flex align={"center"} direction="column" pr={"30px"}>
                             <Heading color="#222222"
@@ -28,7 +28,7 @@ export default function PeopleOne() {
                             </Text>
                             <Button w={"165px"} variant="solid">LEARN MORE</Button>
                         </Flex>
-                        <SimpleGrid columns={[1, 1, 2]}   spacing="4" >
+                        <SimpleGrid columns={[1, 1, 2]} spacing="4" >
                             <Flex align={"center"} direction="column" gap={"4"} >
                                 <Image w="360px" h="208px" src={"https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2020/11/Homepage_FitnessGame6.jpg"}></Image>
                                 <Image w="360px" hminH="365px" src='https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2020/11/Homepage_FitnessGame5.jpg'></Image>

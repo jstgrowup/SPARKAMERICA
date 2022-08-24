@@ -300,18 +300,19 @@ const NAV_ITEMS: Array<NavItem> = [
   },
   {
     label: "PARTNERS",
-    children: [
-      {
-        label: "Job Board",
-        subLabel: "Find your dream design job",
-        href: "/partners",
-      },
-      {
-        label: "Freelance Projects",
-        subLabel: "An exclusive list for contract work",
-        href: "/freelance",
-      },
-    ],
+    href: "/spark-partners",
+    // children: [
+    //   {
+    //     label: "Job Board",
+    //     subLabel: "Find your dream design job",
+    //     href: "/partners",
+    //   },
+    //   {
+    //     label: "Freelance Projects",
+    //     subLabel: "An exclusive list for contract work",
+    //     href: "/freelance",
+    //   },
+    // ],
   },
   {
     label: "CALENDER",

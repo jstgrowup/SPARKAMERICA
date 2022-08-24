@@ -16,8 +16,10 @@ const themes = extendTheme({
           h: "46px",
         },
         outline: {
-          color: "rgb(107, 70, 193)",
-          borderColor: "rgb(107, 70, 193)",
+          color: "white",
+          backgroundColor: "#0076be",
+          borderRadius: "md",
+   
         },
         ghost: {
           color: "rgb(74, 85, 104)",

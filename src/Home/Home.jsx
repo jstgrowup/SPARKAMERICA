@@ -6,7 +6,7 @@ import SparkCities from './SparkCities'
 import BelowNav from './BelowNav'
 import SomethingForEveryone from './SomethingForEveryone'
 import PeopleOne from './PeopleOne'
-import HomeFooter from './HomeFooter'
+import HomeFooter from './CommonFooter'
 export default function Home() {
 
   return (

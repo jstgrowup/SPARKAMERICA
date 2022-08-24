@@ -15,7 +15,7 @@ export default function SparkCities() {
                         </Text>
                         <Image src='https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2020/12/SparkCity_Columbus.jpg' alt='okay'></Image>
                         <Container >
-                            <Button w="250px" h="48px" bg="#d7282f" color="white" borderRadius="3xl">JOIN THE MOVEMENT <ArrowForwardIcon/></Button>
+                            <Button w="250px" h="48px" bg="#d7282f" color="white" borderRadius="3xl">JOIN THE MOVEMENT <ArrowForwardIcon /></Button>
                         </Container>
                     </Stack>
                     <Stack gap={"10px"}>
@@ -27,7 +27,7 @@ export default function SparkCities() {
                         </Text>
                         <Image src='https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2020/12/Partner_Vionic_Shoes.jpg' alt='okay'></Image>
                         <Container >
-                            <Button w="250px" h="48px" colorScheme="red" bg="#d7282f" color="white" borderRadius="3xl">JOIN THE MOVEMENT <ArrowForwardIcon/></Button>
+                            <Button w="250px" h="48px" colorScheme="red" bg="#d7282f" color="white" borderRadius="3xl">JOIN THE MOVEMENT <ArrowForwardIcon /></Button>
                         </Container>
                     </Stack>
                 </SimpleGrid>
