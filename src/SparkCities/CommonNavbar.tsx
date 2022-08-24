@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import "./Common.css";
+import { useNavigate } from "react-router-dom";
 import {
   Box,
   Flex,
@@ -25,20 +25,16 @@ import {
   ChevronRightIcon,
 } from "@chakra-ui/icons";
 
-export default function Navbar() {
+export default function CommonNavbar() {
   const { isOpen, onToggle } = useDisclosure();
-
+  const navi = useNavigate();
   return (
-    <Box className="nav" w={"100%"}>
+    <Box w={"100%"}>
       <Flex
-        // bg={useColorModeValue("white", "gray.800")}
-        // color={useColorModeValue("gray.600", "white")}
         minH={"60px"}
         py={{ base: 2 }}
         px={{ base: 4 }}
         borderBottom={1}
-        // borderStyle={"solid"}
-        // borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
       >
         <Flex
@@ -63,12 +59,15 @@ export default function Navbar() {
           flex={{ base: 1 }}
           justify={{ base: "center", md: "start" }}
         >
-          <Image
-            w={"515px"}
-            h={"61px"}
-            src="https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2020/11/SparkAmerica2020-02-768x96.png"
-            alt="subham"
-          ></Image>
+          <Box onClick={() => navi("/")}>
+            <Image
+              w={"515px"}
+              h={"61px"}
+              src="https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2020/11/SparkAmerica2020-02-768x96.png"
+              alt="subham"
+            ></Image>
+          </Box>
+
           {/* textAlign={useBreakpointValue({ base: "center", md: "left" })}
             fontFamily={"heading"}
             color={useColorModeValue("gray.800", "white")}
@@ -285,34 +284,10 @@ const NAV_ITEMS: Array<NavItem> = [
   {
     label: "JOIN THE MOVEMENT",
     href: "/join-the-movement",
-    // children: [
-    //   {
-    //     label: "Explore Design Work",
-    //     subLabel: "Trending Design to inspire you",
-    //     href: "#",
-    //   },
-    //   {
-    //     label: "New & Noteworthy",
-    //     subLabel: "Up-and-coming Designers",
-    //     href: "#",
-    //   },
-    // ],
   },
   {
     label: "PARTNERS",
     href: "/spark-partners",
-    // children: [
-    //   {
-    //     label: "Job Board",
-    //     subLabel: "Find your dream design job",
-    //     href: "/partners",
-    //   },
-    //   {
-    //     label: "Freelance Projects",
-    //     subLabel: "An exclusive list for contract work",
-    //     href: "/freelance",
-    //   },
-    // ],
   },
   {
     label: "CALENDER",
