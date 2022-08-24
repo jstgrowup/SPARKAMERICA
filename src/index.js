@@ -5,19 +5,24 @@ import { BrowserRouter } from "react-router-dom";
 
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-const theme = extendTheme({
-  baseStyle: {
-    
-   
-    color: "#808285",
-    fontFamily: "sans-serif",
+const themes = extendTheme({
+  colors: {
+ 
+    secondary: "green",
+    primary: "#222222",
+  },
+  fonts: {
+    first: "sans-serif",
+  },
+  font_size: {
+    primaryFontSize: "25px",
   },
 });
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <ChakraProvider theme={theme}>
+      <ChakraProvider theme={themes}>
         <App />
       </ChakraProvider>
     </BrowserRouter>
