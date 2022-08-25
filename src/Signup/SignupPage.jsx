@@ -29,7 +29,7 @@ export default function SignupPage() {
         Lname: "",
         Fname: "",
         dob: "",
-        zipcode: "",
+        zipcode: undefined,
         termsOfUse: false,
         privacyPolicy: false,
         selcity: ""
@@ -114,7 +114,7 @@ export default function SignupPage() {
                                 <Input onChange={handleChange} size={"lg"} value={Fname} name="Fname" type={"text"} placeholder="First Name" ></Input>
                                 <Input onChange={handleChange} size={"lg"} type={"date"} value={dob} name="dob" placeholder="Date of Birth(mm/dd/yyyy)"></Input>
 
-                                <Input onChange={handleChange} size={"lg"} type={"text"} placeholder="Zip Code" value={zipcode} name="zipcode" ></Input>
+                                <Input onChange={handleChange} size={"lg"} type={"number"} placeholder="Zip Code" value={zipcode} name="zipcode" ></Input>
 
                                 <Text maxW={"sm"} noOfLines={[20, 15, 10, 5]} >
                                     Create a username that will be displayed

@@ -6,6 +6,7 @@ import HealthApp from '../Healthapp/HealthApp'
 import Home from '../Home/Home'
 import Register from '../Register/Register'
 import SignupPage from '../Signup/SignupPage'
+import Thankyou from '../Signup/Thankyou'
 import JoinTheMovement from '../SparkCities/JoinTheMovement'
 import SparkPartners from '../SparkPartners/SparkPartners'
 
@@ -23,6 +24,7 @@ export default function AllRoutes() {
                 <Route path='/register' element={<Register />}></Route>
 
                 <Route path='/signup' element={<SignupPage />}></Route>
+                <Route path='/thankyoupage' element={<Thankyou />}></Route>
             </Routes>
         </>
     )
