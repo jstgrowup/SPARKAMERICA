@@ -30,12 +30,12 @@ export default function Reachout() {
     const handleSubmit = () => {
         setverified ? alert("ok") : alert("sorry")
     }
-    console.log(formData);
+
     return (
         <>
-            <Center w={"100%"} minH={"590px"} mt="40" mb={"30"} border="2px" borderColor={"solid black"}>
-                <SimpleGrid maxW={"80%"} columns={[1, 1, 2, 2]} spacing={"5"} border="2px" borderColor={"solid black"} >
-                    <Flex minH={"576px"} minW={"60%"} border="2px" borderColor={"solid black"} align="flex-start" gap={"5"} direction="column">
+            <Center w={"100%"} minH={"590px"} mt="40" mb={"30"} >
+                <SimpleGrid maxW={"80%"} columns={[1, 1, 2, 2]} spacing={"5"}  >
+                    <Flex minH={"576px"} align="flex-start" gap={"5"} direction="column">
                         <Heading
                             color="#222222"
                             fontWeight="thin"
@@ -75,21 +75,24 @@ export default function Reachout() {
                             sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
                             onChange={onchange}
                         />
-                        {/* <Input type={"submit"} value="SEND MESSAGE"></Input> */}
+
                         <Button disabled={verified === false} onClick={handleSubmit} fontSize={"xs"} size="lg" >SEND MESSAGE</Button>
 
 
 
 
                     </Flex>
-                    <Flex minH={"535px"}>
-                        <Text>
-                            support@sparkamerica.com
-                            (888) 330-6891
-                            SparkAmerica
-                            P.O Box 123, OakMont,PA 15139
-                        </Text>
-                    </Flex>
+
+                    <Text minH={"535px"} w={"43%"} noOfLines={[15, 10, 4]} >
+                        support@sparkamerica.com
+
+                        (888) 330-6891
+
+                        SparkAmerica
+
+                        P.O Box 123, OakMont,PA 15139
+                    </Text>
+
                 </SimpleGrid>
             </Center>
         </>
