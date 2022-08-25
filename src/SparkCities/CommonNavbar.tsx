@@ -291,11 +291,11 @@ const NAV_ITEMS: Array<NavItem> = [
   },
   {
     label: "CALENDER",
-    href: "/calender",
+    href: "/annual-challenge-calender",
   },
   {
     label: "THE APP",
-    href: "/theapp",
+    href: "/peopleonehealth-app",
   },
   {
     label: "CONTACT US",

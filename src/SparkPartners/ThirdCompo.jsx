@@ -46,6 +46,7 @@ export default function ThirdCompo() {
                         <Center >
                             <Button w={"124px"} h={"58px"} borderRadius={"md"}>ABC6 </Button>
                         </Center>
+
                     </Flex>
                     <Flex minH={"422px"} p={"30px"} direction={"column"} gap="10px" border={"1px"} borderColor="solid black" align="center">
                         <Image src='https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2020/12/WCPOCincinnati.png' alt='okay'></Image>
