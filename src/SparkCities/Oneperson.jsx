@@ -4,8 +4,8 @@ import React from 'react'
 export default function Oneperson() {
     return (
         <>
-            <Center w={"100%"} minH={"170px"} mt="50px" border={"2px"} borderColor="solid purple"  >
-                <Box maxW={"80%"} minH={"150px"} border={"2px"} borderColor="solid black"   >
+            <Center w={"100%"} minH={"170px"} mt="50px"   >
+                <Box maxW={"80%"} minH={"150px"}  >
 
                     <Heading
                         color="#222222"

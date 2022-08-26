@@ -41,7 +41,7 @@ export default function Register() {
         <>
             <Box minW={"100%"} minH={"900px"} backgroundImage="https://portal.peopleonehealth.com/Content/Images/CityImages/SparkAmericaCityPageHeader.jpg">
                 <Center>
-                    <Box minH={"96px"} w="750px" backgroundImage="https://portal.peopleonehealth.com/Content/Images/CityImages/SparkAmerica2020-02-768x96.png">
+                    <Box minH={"96px"} w="750px" onClick={() => navi("/")} backgroundImage="https://portal.peopleonehealth.com/Content/Images/CityImages/SparkAmerica2020-02-768x96.png">
                     </Box>
 
                 </Center>
@@ -64,7 +64,7 @@ export default function Register() {
                                 <FormErrorMessage >  Email is required.</FormErrorMessage>
                             )}
                         </FormControl>
-                        <Text fontSize={"xl"} fontFamily={"Montserrat"}>
+                        <Text fontSize={"lg"} fontFamily={"Montserrat"}>
                             Note:If your organization or company already uses
                             <br />
                             PeopleOne, pleasee enter your company email address above
@@ -80,7 +80,7 @@ export default function Register() {
                             <Spacer />
                             <Button onClick={check} variant={"ghost"}>
                                 {isLoading ? <Spinner color='white.500' /> : "CONTINUE >"}
-                                {/* CONTINUE <ChevronRightIcon /> */}
+
 
 
                             </Button>

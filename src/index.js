@@ -14,11 +14,13 @@ const themes = extendTheme({
           borderRadius: "3xl",
           backgroundColor: "#d7282f",
           h: "46px",
+          _hover: "green.400",
         },
         outline: {
           color: "white",
           backgroundColor: "#0076be",
           borderRadius: "md",
+          _hover: "green.400",
         },
         ghost: {
           color: "white",
@@ -27,7 +29,7 @@ const themes = extendTheme({
         },
         icono: {
           color: "#6C757D",
-       
+
           // borderRadius: "3xl",
         },
       },

@@ -5,28 +5,34 @@ import {
     AlertTitle,
     AlertDescription,
     Alert,
-    Text
+    Text,
+    SlideFade,
+    useDisclosure,
+    CloseButton
 } from '@chakra-ui/react'
 
 
 import { ChevronRightIcon } from "@chakra-ui/icons"
 
 import { useNavigate } from "react-router-dom"
-export default function Thankyou() {
 
+export default function Thankyou() {
+    const { isOpen, onToggle } = useDisclosure()
     const [isLoading, setIsLoading] = useState(false);
-    const [ale, setale] = useState(false)
+
     const navi = useNavigate()
-    let isError = ""
+
     const hola = () => {
         setIsLoading(true);
-        setale(true)
+
         setTimeout(() => {
             setIsLoading(false);
-        }, 1500);
+
+        }, 2500);
     }
     function check() {
         hola()
+        onToggle()
     }
 
     const parseddata = JSON.parse(localStorage.getItem("userdetails")) || {}
@@ -36,9 +42,9 @@ export default function Thankyou() {
     return (
         <>
 
-            <Box minW={"100%"} minH={"900px"} backgroundImage="https://spark360prodstorage.blob.core.windows.net/cityimages/citysparkbostoncityimage22.png">
+            <Box minW={"100%"} minH={"900px"}  backgroundImage="https://spark360prodstorage.blob.core.windows.net/cityimages/citysparkbostoncityimage22.png">
                 <Center>
-                    <Box minH={"96px"} minW="750px" backgroundImage="https://portal.peopleonehealth.com/Content/Images/CityImages/SparkAmerica2020-02-768x96.png">
+                    <Box minH={"96px"} minW="750px" onClick={() => navi("/")} backgroundImage="https://portal.peopleonehealth.com/Content/Images/CityImages/SparkAmerica2020-02-768x96.png">
                     </Box>
 
                 </Center>
@@ -68,7 +74,29 @@ export default function Thankyou() {
 
                     </Flex>
                 </Center>
-                { }
+                <SlideFade in={isOpen} offsetY='20px'>
+                    <Center >
+                        <Box
+                           
+
+                            color='black'
+                           
+                            minW={"40%"}
+                            minH={"50px"}
+                            bg='green.300'
+                            rounded='md'
+                            shadow='md'
+                        >
+                            <Alert status='success' variant='left-accent' borderRadius={"md"}>
+                                <AlertIcon />
+                                <AlertTitle>Email sent!</AlertTitle>
+                                <AlertDescription>Please check your mail and click on the verification link.</AlertDescription>
+                                <CloseButton position={"absolute"} right={"8px"} top={"8px"}></CloseButton>
+                            </Alert>
+                        </Box>
+                    </Center>
+
+                </SlideFade>
 
             </Box>
 
