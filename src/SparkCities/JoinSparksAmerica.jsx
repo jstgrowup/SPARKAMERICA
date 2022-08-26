@@ -1,4 +1,4 @@
-import { Box, Button, Center, Heading, Text } from '@chakra-ui/react'
+import { Box, Button, Center, Flex, Heading, Text } from '@chakra-ui/react'
 import React from 'react'
 import { CheckIcon } from "@chakra-ui/icons"
 
@@ -7,8 +7,8 @@ export default function JoinSparksAmerica() {
         <>
 
 
-            <Center w={"100%"} minH={"600px"} mt="50px" border={"2px"} borderColor="solid purple"  >
-                <Box maxW={"80%"}  border={"2px"} borderColor="solid black"   >
+            <Center w={"100%"} minH={"600px"} mt="50px"  >
+                <Flex maxW={"80%"} align="flex-start" direction={"column"}  gap={"19"}  >
 
                     <Heading
                         color="#222222"
@@ -16,15 +16,14 @@ export default function JoinSparksAmerica() {
                         fontFamliy="sans-serif">JOIN SPARKAMERICA</Heading>
                     <Box m="2" style={{ height: "2px", width: "30%", borderWidth: "0", color: "red", backgroundColor: "red" }} >
                     </Box>
-                    <Text noOfLines={[20, 14, 4]}>
+                    <Text noOfLines={[20, 14, 4]} w={'50%'}>
                         We have over 70 cities participating in SparkAmerica, click below to sign up in your city today! You can join your city in three ways.
-                        <ul>
-                            <li>First, by being part of your #TeamCity.</li>
-                            <li> Second, by joining an existing business or organization in your city.</li>
-                            <li>  Third, by requesting to add your business or organization.</li>
+                         First, by being part of your #TeamCity.
+                        Second, by joining an existing business or organization in your city.
+                        Third, by requesting to add your business or organization.
 
 
-                        </ul>
+
 
                     </Text>
                     <Center>
@@ -51,7 +50,7 @@ export default function JoinSparksAmerica() {
 
 
                     </Text>
-                </Box>
+                </Flex>
 
 
             </Center>

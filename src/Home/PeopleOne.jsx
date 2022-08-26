@@ -4,10 +4,10 @@ import React from 'react'
 export default function PeopleOne() {
     return (
         <>
-            <Center w={"100%"} minH={"853px"} mt="100px" border={"2px"} borderColor="solid purple"  >
-                <Box maxW={"90%"}  minH={"700px"} >
+            <Center w={"100%"} minH={"853px"} mt="100px"   >
+                <Box maxW={"90%"} minH={"700px"} >
                     <SimpleGrid columns={[1, null, 2]} >
-                        <Flex align={"center"} direction="column" pr={"30px"}>
+                        <Flex align={"center"} direction="column" gap={"15"}>
                             <Heading color="#222222"
 
                                 fontWeight="thin"
@@ -16,7 +16,7 @@ export default function PeopleOne() {
                                 AND WEBSITE
 
                             </Heading>
-                            <Text noOfLines={[16, 12, 8]}>
+                            <Text noOfLines={[16, 12, 9]}>
                                 At the core of SparkAmerica you'll find the
                                 PeopleOne Health app. This technology platform
                                 helps our members track their health and join in

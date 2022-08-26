@@ -1,9 +1,17 @@
-import { Box, Center, Checkbox, Flex, Heading, Input, Select, SimpleGrid, Spacer, Spinner, Text } from '@chakra-ui/react'
+import { Box, Center, Checkbox, Flex, Heading, Input, Select, SimpleGrid, Spacer, Spinner, Text, useDisclosure } from '@chakra-ui/react'
 import React from 'react'
 import {
 
 
 
+    AlertIcon,
+    AlertTitle,
+    AlertDescription,
+    Alert,
+
+    SlideFade,
+
+    CloseButton,
     InputGroup,
 
     InputRightElement,
@@ -17,6 +25,7 @@ import {
 import { useNavigate } from "react-router-dom"
 import { useState } from 'react';
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
+
 export default function SignupPage() {
     const [showPassword, setShowPassword] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
@@ -47,22 +56,31 @@ export default function SignupPage() {
         setTimeout(() => {
             setIsLoading(false);
             localStorage.setItem("userdetails", JSON.stringify(formData))
-            navi("/");
+            navi("/thankyoupage");
         }, 1500);
     }
-
+    const { isOpen, onToggle } = useDisclosure()
+    const [type, settype] = useState("")
     function check() {
 
-        // isError = username === '' ? alert("please enter all your credentials") : 
+
         if (username === "" || email === "" || password1 === "" || password2 === "" || Lname === "" || Fname === "" || dob === "" || zipcode === "" || selcity === "" || termsOfUse === false || privacyPolicy === false) {
-            alert("Please enter all the credentials")
+
+            onToggle()
+            settype("warning")
+
         }
         else if (password1 !== password2) {
-            alert("Passowrd doesn't match")
+
+            onToggle()
+            settype("error")
+
         }
         else {
 
             hola()
+            onToggle()
+            settype("success")
         }
         updateFormdata({
             username: "",
@@ -78,12 +96,44 @@ export default function SignupPage() {
             termsOfUse: false
         })
     }
-    console.log(formData);
+
     return (
         <>
             <Box minW={"100%"} minH={"900px"} backgroundImage="https://portal.peopleonehealth.com/Content/Images/CityImages/SparkAmericaCityPageHeader.jpg">
+
+                <SlideFade in={isOpen} offsetY='20px'>
+                    <Center >
+                        <Box
+                            color='black'
+                            minW={"55%"}
+                            minH={"60px"}
+
+                            rounded='md'
+                            shadow='md'
+                        >
+                            {type === "success" ? <Alert status={"success"} variant='left-accent' borderRadius={"md"} display="block">
+                                <AlertIcon />
+                                <AlertTitle>Email sent!</AlertTitle>
+                                <AlertDescription>Please check your mail and click on the verification link.</AlertDescription>
+                                <CloseButton position={"absolute"} right={"8px"} top={"8px"}></CloseButton>
+                            </Alert> : type === "warning" ? <Alert status={"warning"} variant='left-accent' borderRadius={"md"}>
+                                <AlertIcon />
+                                <AlertTitle> Enter all the credentials!</AlertTitle>
+                                <AlertDescription>Please Enter all the credentials to proceed further</AlertDescription>
+                                <CloseButton position={"absolute"} right={"8px"} top={"8px"}></CloseButton>
+                            </Alert> : <Alert status={"error"} variant='left-accent' borderRadius={"md"}>
+                                <AlertIcon />
+                                <AlertTitle>Password!</AlertTitle>
+                                <AlertDescription>Please check your passwords are not matching</AlertDescription>
+                                <CloseButton position={"absolute"} right={"8px"} top={"8px"}></CloseButton>
+                            </Alert>
+                            }
+                        </Box>
+                    </Center>
+
+                </SlideFade>
                 <Center>
-                    <Box minH={"96px"} w="750px" backgroundImage="https://portal.peopleonehealth.com/Content/Images/CityImages/SparkAmerica2020-02-768x96.png">
+                    <Box minH={"96px"} onClick={() => navi("/")} w="750px" backgroundImage="https://portal.peopleonehealth.com/Content/Images/CityImages/SparkAmerica2020-02-768x96.png">
                     </Box>
 
                 </Center>
@@ -206,7 +256,6 @@ export default function SignupPage() {
                             <Spacer />
                             <Button onClick={check} variant={"ghost"}>
                                 {isLoading ? <Spinner color='white.500' /> : "CREATE ACCOUNT"}
-                                {/* CONTINUE <ChevronRightIcon /> */}
 
 
                             </Button>
@@ -214,6 +263,37 @@ export default function SignupPage() {
                     </Flex>
                 </Center>
 
+                <SlideFade in={isOpen} offsetY='20px'>
+                    <Center >
+                        <Box
+                            color='black'
+                            minW={"55%"}
+                            minH={"60px"}
+
+                            rounded='md'
+                            shadow='md'
+                        >
+                            {type === "success" ? <Alert status={"success"} variant='left-accent' borderRadius={"md"}  >
+                                <AlertIcon />
+                                <AlertTitle>Email sent!</AlertTitle>
+                                <AlertDescription>Please check your mail and click on the verification link.</AlertDescription>
+                                <CloseButton position={"absolute"} right={"8px"} top={"8px"}></CloseButton>
+                            </Alert> : type === "warning" ? <Alert status={"warning"} variant='left-accent' borderRadius={"md"}>
+                                <AlertIcon />
+                                <AlertTitle> Enter all the credentials!</AlertTitle>
+                                <AlertDescription>Please Enter all the credentials to proceed further</AlertDescription>
+                                <CloseButton position={"absolute"} right={"8px"} top={"8px"}></CloseButton>
+                            </Alert> : <Alert status={"error"} variant='left-accent' borderRadius={"md"}>
+                                <AlertIcon />
+                                <AlertTitle>Password!</AlertTitle>
+                                <AlertDescription>Please check your passwords are not matching</AlertDescription>
+                                <CloseButton position={"absolute"} right={"8px"} top={"8px"}></CloseButton>
+                            </Alert>
+                            }
+                        </Box>
+                    </Center>
+
+                </SlideFade>
 
             </Box>
 

@@ -1,4 +1,4 @@
-import { Box, Button, Center, Checkbox, Flex, Heading, Input, SimpleGrid, Text } from '@chakra-ui/react'
+import { Alert, AlertDescription, AlertIcon, AlertTitle, Box, Button, Center, Checkbox, CloseButton, Flex, Heading, Input, SimpleGrid, SlideFade, Text, useDisclosure } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import ReCAPTCHA from "react-google-recaptcha";
 export default function Reachout() {
@@ -14,11 +14,13 @@ export default function Reachout() {
 
     });
     const { uname, email, Partnering, Sponsoring, bring } = formData
+    const { isOpen, onToggle } = useDisclosure()
+
     const handleChange = (e) => {
         let { value, name, type, checked } = e.target
         value = type === "checkbox" ? checked : value
         updateFormdata((prev) => ({ ...prev, [name]: value }))
-        if (uname.length > 0 && email.length) {
+        if (uname.length > 0 && email.length > 0) {
             setverified(true)
         }
 
@@ -28,12 +30,23 @@ export default function Reachout() {
 
     }
     const handleSubmit = () => {
-        setverified ? alert("ok") : alert("sorry")
+        setverified ? onToggle() : alert("Something is wrong")
+        updateFormdata({
+            uname: "",
+            email: "",
+            Partnering: false,
+            Sponsoring: false,
+            bring: false,
+        })
     }
 
     return (
         <>
+
             <Center w={"100%"} minH={"590px"} mt="40" mb={"30"} >
+
+
+
                 <SimpleGrid maxW={"80%"} columns={[1, 1, 2, 2]} spacing={"5"}  >
                     <Flex minH={"576px"} align="flex-start" gap={"5"} direction="column">
                         <Heading
@@ -78,7 +91,28 @@ export default function Reachout() {
 
                         <Button disabled={verified === false} onClick={handleSubmit} fontSize={"xs"} size="lg" >SEND MESSAGE</Button>
 
+                        <SlideFade in={isOpen} offsetY='20px'>
+                            <Center minW={"300px"}  >
+                                <Box
 
+
+                                    color='black'
+
+                                    minW={"400px"}
+
+
+                                    rounded='md'
+                                    shadow='md'
+                                >
+                                    <Alert status='success' variant='left-accent' borderRadius={"md"}>
+                                        <AlertIcon />
+                                        <AlertTitle>Query sent!</AlertTitle>
+                                        <AlertDescription>We will get back to you soon.</AlertDescription>
+                                        {/* <CloseButton position={"absolute"} right={"8px"} top={"8px"}></CloseButton> */}
+                                    </Alert>
+                                </Box>
+                            </Center>
+                        </SlideFade>
 
 
                     </Flex>
