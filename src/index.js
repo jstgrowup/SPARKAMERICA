@@ -11,7 +11,7 @@ const themes = extendTheme({
       variants: {
         solid: {
           color: "white",
-          borderRadius: "3xl",
+          borderRadius: "2xl",
           backgroundColor: "#d7282f",
           h: "46px",
           _hover: "green.400",

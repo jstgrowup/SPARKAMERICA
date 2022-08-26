@@ -10,6 +10,8 @@ import SignupPage from '../Signup/SignupPage'
 import Thankyou from '../Signup/Thankyou'
 import JoinTheMovement from '../SparkCities/JoinTheMovement'
 import SparkPartners from '../SparkPartners/SparkPartners'
+import CommonNavbar from '../SparkCities/CommonNavbar.tsx'
+
 
 // import Navbar from './Navbar.tsx'
 export default function AllRoutes() {

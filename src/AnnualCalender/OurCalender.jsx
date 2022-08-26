@@ -10,7 +10,7 @@ export default function OurCalender() {
                     <Heading
                         color="#222222"
                         fontWeight="thin"
-                        fontFamliy="sans-serif">OUR PARTNERS</Heading>
+                        fontFamliy="sans-serif">OUR CALENDER</Heading>
                     <Box m="1.5" style={{ height: "2.5px", width: "30%", borderWidth: "0", color: "red", backgroundColor: "red" }} >
                     </Box>
                     <Text noOfLines={[35, 20, 8]} color="blackAlpha.900" fontSize="md">
@@ -21,7 +21,7 @@ export default function OurCalender() {
                         The physical challenges, like the Fit City Challenge, are based on Active Minutes. That means that anyone can participate, because all you need is to be
                         active for at least 10 minutes a day. All kinds of activity - walk your dog, garden, roller skate, play basketball, dance, hike, skateboard, swim - count
                         toward your Active Minutes!
-                        All of our challenges utilize the <Link style={{color:"blue"}} to={"/accountLogin"}>PeopleOne Health portal</Link>, our free and easy-to-use technology platform.
+                        All of our challenges utilize the <Link style={{ color: "blue" }} to={"/accountLogin"}>PeopleOne Health portal</Link>, our free and easy-to-use technology platform.
                     </Text>
                 </Box>
 
