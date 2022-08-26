@@ -81,20 +81,21 @@ export default function SignupPage() {
             hola()
             onToggle()
             settype("success")
+            updateFormdata({
+                username: "",
+                email: "",
+                password1: "",
+                password2: "",
+                Lname: "",
+                Fname: "",
+                dob: "",
+                zipcode: "",
+                selcity: "",
+                privacyPolicy: false,
+                termsOfUse: false
+            })
         }
-        updateFormdata({
-            username: "",
-            email: "",
-            password1: "",
-            password2: "",
-            Lname: "",
-            Fname: "",
-            dob: "",
-            zipcode: "",
-            selcity: "",
-            privacyPolicy: false,
-            termsOfUse: false
-        })
+
     }
 
     return (

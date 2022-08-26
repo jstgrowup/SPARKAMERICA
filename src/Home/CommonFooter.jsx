@@ -6,10 +6,10 @@ export default function HomeFooter() {
         <>
             {/* maxW={"90%"} maxH="853px" minH={"700px"} */}
             <Center w={"100%"} minH={"454px"} border={"2px"} borderColor="solid purple" bg={"#3d7cc9"} color="white" >
-                <SimpleGrid maxW={"30%"} minH={"200px"} columns={[1, 1, 2]} >
-                    <Flex w={"44%"} direction={"column"} align="center" gap={"20px"} >
+                <SimpleGrid maxW={"30%"} minH={"200px"} columns={[1, ,1, 1, 2]} spacing={"17"}>
+                    <Flex minW={"44%"} direction={"column"} align="center" gap={"6"} >
                         <Heading fontSize={"30px"} fontWeight={"thin"}>CONTACTUS</Heading>
-                        <Text noOfLines={[null, null, 4]}>
+                        <Text noOfLines={[13, 7, 4]}>
                             Support@sparkamaerica.com
                             (888) 330-6891
                             SparkAmerica

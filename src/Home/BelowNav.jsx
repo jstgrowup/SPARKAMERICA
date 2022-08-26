@@ -5,7 +5,7 @@ import Navbar from './Navbar.tsx'
 export default function BelowNav() {
     return (
         <>
-            <Box height={"800px"} w="100%" backgroundImage="https://sparkamerica.com/wp-content/uploads/2020/12/HomeHeader1.jpg">
+            <Box height={"800px"} minW="100%" backgroundImage="https://sparkamerica.com/wp-content/uploads/2020/12/HomeHeader1.jpg">
 
                 <Navbar />
                 <Box className='rest'>
