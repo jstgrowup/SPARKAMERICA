@@ -1,14 +1,16 @@
-import { Box, Button, Center, Flex, Heading, Text } from '@chakra-ui/react'
+import { Box, Button, Center, Flex, Heading, Text, Link } from '@chakra-ui/react'
 import React from 'react'
 import { CheckIcon } from "@chakra-ui/icons"
+import { useNavigate } from 'react-router-dom'
 
 export default function JoinSparksAmerica() {
+    const navi = useNavigate()
     return (
         <>
 
 
             <Center w={"100%"} minH={"600px"} mt="50px"  >
-                <Flex maxW={"80%"} align="flex-start" direction={"column"}  gap={"19"}  >
+                <Flex maxW={"80%"} align="flex-start" direction={"column"} gap={"19"}  >
 
                     <Heading
                         color="#222222"
@@ -18,7 +20,7 @@ export default function JoinSparksAmerica() {
                     </Box>
                     <Text noOfLines={[20, 14, 4]} w={'50%'}>
                         We have over 70 cities participating in SparkAmerica, click below to sign up in your city today! You can join your city in three ways.
-                         First, by being part of your #TeamCity.
+                        First, by being part of your #TeamCity.
                         Second, by joining an existing business or organization in your city.
                         Third, by requesting to add your business or organization.
 
@@ -27,15 +29,18 @@ export default function JoinSparksAmerica() {
 
                     </Text>
                     <Center>
-                        <Button _hover={{ bg: 'rgba(255,105,0,1)' }} variant={"outline"} w="197px" h={"46px"} ><CheckIcon /> <Heading size={"xs"}>REGISTER HERE</Heading></Button>
+                        <Button onClick={() => navi("/register")} _hover={{ bg: 'rgba(255,105,0,1)' }} variant={"outline"} w="197px" h={"46px"} ><CheckIcon /> <Heading size={"xs"}>REGISTER HERE</Heading></Button>
                     </Center>
                     <Text>
                         If you want to learn more about how the SparkAmerica Fit City Challenge works and also learn how you can connect to the tools inside
                         SparkAmerica, download our toolkit!
                     </Text>
                     <Center>
+                        <Link href="https://spark360prodstorage.blob.core.windows.net/publicfiles/2022%20SparkAmerica%20Toolkit.pdf">
+                            <Button _hover={{ bg: 'rgba(255,105,0,1)' }} variant={"outline"} w={'315px'} h="46px" ><CheckIcon /> <Heading size={"xs"} textDecoration="none">DOWNLOAD THE TOOLKIT HERE(PDF)</Heading>
+                            </Button>
+                        </Link>
 
-                        <Button _hover={{ bg: 'rgba(255,105,0,1)' }} variant={"outline"} w={'315px'} h="46px" ><CheckIcon /> <Heading size={"xs"}>DOWNLOAD THE TOOLKIT HERE(PDF)</Heading></Button>
                     </Center>
                     <Heading
                         color="#222222"
