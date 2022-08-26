@@ -19,10 +19,16 @@ const themes = extendTheme({
           color: "white",
           backgroundColor: "#0076be",
           borderRadius: "md",
-   
         },
         ghost: {
-          color: "rgb(74, 85, 104)",
+          color: "white",
+          backgroundColor: "#006DA8",
+          borderRadius: "3xl",
+        },
+        icono: {
+          color: "#6C757D",
+       
+          // borderRadius: "3xl",
         },
       },
     },
