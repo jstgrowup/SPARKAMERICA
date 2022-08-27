@@ -6,6 +6,7 @@ import Reachout from './Reachout'
 import HomeFooter from '../Home/CommonFooter'
 
 export default function ContactUs() {
+    document.title="CONTACT US - SparkAmerica"
     return (
         <>
             <CommonNavbar />

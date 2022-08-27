@@ -13,6 +13,7 @@ import { useNavigate } from "react-router-dom"
 
 
 export default function Register() {
+    document.title="SparkAmerica:Get Started"
     const [input, setInput] = useState('')
     const [isLoading, setIsLoading] = useState(false);
 

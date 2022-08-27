@@ -8,6 +8,7 @@ import ThirdCompo from './ThirdCompo'
 import VionicShoes from './VionicShoes'
 
 export default function SparkPartners() {
+    document.title="PARTNERS - SparkAmerica"
     return (
         <>
             <CommonNavbar />

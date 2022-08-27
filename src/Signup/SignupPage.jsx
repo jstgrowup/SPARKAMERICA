@@ -27,6 +27,7 @@ import { useState } from 'react';
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 
 export default function SignupPage() {
+    document.title="Register:SparkAmerica"
     const [showPassword, setShowPassword] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
     const navi = useNavigate()
