@@ -9,6 +9,7 @@ import Oneperson from './Oneperson'
 
 
 export default function JoinTheMovement() {
+    document.title="JOIN THE MOVEMENT - SparkAmerica"
     return (
         <>
             <CommonNavbar />

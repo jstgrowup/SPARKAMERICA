@@ -5,6 +5,7 @@ import CommonNavbar from '../SparkCities/CommonNavbar.tsx'
 import MainGrid from './MainGrid'
 import OurCalender from './OurCalender'
 export default function Calender() {
+    document.title="CALENDER - SparkAmerica"
     return (
         <>
             <CommonNavbar />

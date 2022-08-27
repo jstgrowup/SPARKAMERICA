@@ -6,6 +6,7 @@ import HealthAppGrid from './HealthAppGrid'
 import OurApp from './OurApp'
 
 export default function HealthApp() {
+    document.title="THE APP - SparkAmerica"
     return (
         <>
             <CommonNavbar />
