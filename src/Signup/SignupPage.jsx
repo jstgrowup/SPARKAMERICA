@@ -27,7 +27,7 @@ import { useState } from 'react';
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 
 export default function SignupPage() {
-    document.title="Register:SparkAmerica"
+    document.title = "Register:SparkAmerica"
     const [showPassword, setShowPassword] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
     const navi = useNavigate()
@@ -101,7 +101,7 @@ export default function SignupPage() {
 
     return (
         <>
-            <Box minW={"100%"} minH={"900px"} backgroundImage="https://portal.peopleonehealth.com/Content/Images/CityImages/SparkAmericaCityPageHeader.jpg">
+            <Box minW={"100%"} minH={"720px"} backgroundImage="https://portal.peopleonehealth.com/Content/Images/CityImages/SparkAmericaCityPageHeader.jpg">
 
                 <SlideFade in={isOpen} offsetY='20px'>
                     <Center >
@@ -134,18 +134,18 @@ export default function SignupPage() {
                     </Center>
 
                 </SlideFade>
-                <Center>
-                    <Box minH={"96px"} onClick={() => navi("/")} w="750px" backgroundImage="https://portal.peopleonehealth.com/Content/Images/CityImages/SparkAmerica2020-02-768x96.png">
+                <Center >
+                    <Box  minH="96px" onClick={() => navi("/")} w="750px" backgroundImage="https://portal.peopleonehealth.com/Content/Images/CityImages/SparkAmerica2020-02-768x96.png">
                     </Box>
 
                 </Center>
 
                 <Center minW={"100%"} minH="500px" mt={"14"} >
-                    <Flex gap="3" direction={"column"} align="center" p="3.2rem" bg="#FFFFFF" borderRadius={"2xl"} boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px;"} minH={"750px"}   >
+                    <Flex gap="3" direction={"column"} align="center" p="2.2rem" bg="#FFFFFF" borderRadius={"2xl"} boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px;"}   >
                         <Text fontFamily={"Montserrat"} fontSize={"3xl"}>Welcome to SparkAmerica</Text>
                         <Text fontFamily={"Montserrat"} fontSize={"xl"}>We need to get to know you and you'll be on your way in now time</Text>
-                        <SimpleGrid columns={[1, 1, 2, 2]} spacing="5" minW={"100%"} >
-                            <Flex gap="4" direction={"column"} align="flex-start">
+                        <SimpleGrid columns={[1, 1, 1, 2]} spacing="5" minW={"95%"} >
+                            <Flex gap="2.5" direction={"column"} align="flex-start">
                                 <Input onChange={handleChange} value={email} name="email" size={"lg"} type={"text"} placeholder="Enter email" ></Input>
 
 
@@ -239,7 +239,7 @@ export default function SignupPage() {
                                 </label>
 
                             </Flex>
-                            <Flex gap="4" direction={"column"} align="center">
+                            <Flex gap="2" direction={"column"} align="center">
                                 <InputGroup>
                                     <Input onChange={handleChange} placeholder='Enter Password again' value={password2} name="password2" size={"lg"} type={showPassword ? 'text' : 'password'} />
                                     <InputRightElement h={'full'}>
