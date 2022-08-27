@@ -144,7 +144,7 @@ export default function SignupPage() {
                         <Text fontFamily={"Montserrat"} fontSize={"3xl"}>Welcome to SparkAmerica</Text>
                         <Text fontFamily={"Montserrat"} fontSize={"xl"}>We need to get to know you and you'll be on your way in now time</Text>
                         <SimpleGrid columns={[1, 1, 2, 2]} spacing="5" minW={"100%"} >
-                            <Flex gap="4" direction={"column"} align="center">
+                            <Flex gap="4" direction={"column"} align="flex-start">
                                 <Input onChange={handleChange} value={email} name="email" size={"lg"} type={"text"} placeholder="Enter email" ></Input>
 
 
@@ -163,7 +163,10 @@ export default function SignupPage() {
                                 </InputGroup>
 
                                 <Input onChange={handleChange} size={"lg"} value={Fname} name="Fname" type={"text"} placeholder="First Name" ></Input>
+                                <Text size={"md"}>Date of birth</Text>
+
                                 <Input onChange={handleChange} size={"lg"} type={"date"} value={dob} name="dob" placeholder="Date of Birth(mm/dd/yyyy)"></Input>
+
 
                                 <Input onChange={handleChange} size={"lg"} type={"number"} placeholder="Zip Code" value={zipcode} name="zipcode" ></Input>
 
