@@ -28,19 +28,23 @@ export default function JoinSparksAmerica() {
 
 
                     </Text>
-                    <Center>
+                    <Center minW={"100%"} >
                         <Button onClick={() => navi("/register")} _hover={{ bg: 'rgba(255,105,0,1)' }} variant={"outline"} w="197px" h={"46px"} ><CheckIcon /> <Heading size={"xs"}>REGISTER HERE</Heading></Button>
                     </Center>
                     <Text>
                         If you want to learn more about how the SparkAmerica Fit City Challenge works and also learn how you can connect to the tools inside
-                        SparkAmerica, download our toolkit!
+                        SparkAmerica, download our toolkit
+
                     </Text>
-                    <Center>
+                    <Center minW={"100%"}>
                         <Link href="https://spark360prodstorage.blob.core.windows.net/publicfiles/2022%20SparkAmerica%20Toolkit.pdf">
-                            <Button _hover={{ bg: 'rgba(255,105,0,1)' }} variant={"outline"} w={'315px'} h="46px" ><CheckIcon /> <Heading size={"xs"} textDecoration="none">DOWNLOAD THE TOOLKIT HERE(PDF)</Heading>
+                            <Button _hover={{ bg: 'rgba(255,105,0,1)' }} variant={"outline"} w={'315px'} h="46px" >
+                                <CheckIcon />
+                                {/* <img src="https://www.flaticon.com/free-icons/toolbox" alt="toolbox icons" /> */}
+                                <Heading size={"xs"} textDecoration="none">DOWNLOAD THE TOOLKIT HERE(PDF)</Heading>
                             </Button>
                         </Link>
-
+                        {/* <a href="https://www.flaticon.com/free-icons/toolbox" title="toolbox icons">Toolbox icons created by Hidra - Flaticon</a> */}
                     </Center>
                     <Heading
                         color="#222222"

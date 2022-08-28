@@ -62,6 +62,7 @@ export default function Navbar() {
           alignItems={"center"}
           flex={{ base: 1 }}
           justify={{ base: "center", md: "start" }}
+          
         >
           <Image
             w={"515px"}
@@ -69,42 +70,7 @@ export default function Navbar() {
             src="https://secureservercdn.net/45.40.145.201/79x.0e9.myftpupload.com/wp-content/uploads/2020/11/SparkAmerica2020-02-768x96.png"
             alt="subham"
           ></Image>
-          {/* textAlign={useBreakpointValue({ base: "center", md: "left" })}
-            fontFamily={"heading"}
-            color={useColorModeValue("gray.800", "white")}
-          >
-           
-          </Text> */}
-          {/* <Stack
-          flex={{ base: 1, md: 0 }}
-          justify={"flex-end"}
-          direction={"row"}
-          spacing={6}
-        >
-          <Button
-            as={"a"}
-            fontSize={"sm"}
-            fontWeight={400}
-            variant={"link"}
-            href={"#"}
-          >
-            Sign In
-          </Button>
-          <Button
-            display={{ base: "none", md: "inline-flex" }}
-            fontSize={"sm"}
-            fontWeight={600}
-            color={"white"}
-            bg={"pink.400"}
-            // href={'#'}
-            _hover={{
-              bg: "pink.300",
-            }}
-          >
-            Sign Up
-          </Button>
-           </Stack> */}
-          <Flex display={{ base: "none", md: "flex" }} ml={10}>
+           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
           </Flex>
         </Flex>

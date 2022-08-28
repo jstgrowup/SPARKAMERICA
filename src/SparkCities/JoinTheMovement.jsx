@@ -20,7 +20,7 @@ export default function JoinTheMovement() {
             </Center>
 
             <Oneperson />
-            <JoinSparksAmerica />
+          <JoinSparksAmerica />
             <HomeFooter />
         </>
     )
