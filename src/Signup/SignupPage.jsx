@@ -54,6 +54,7 @@ export default function SignupPage() {
     }
     const hola = () => {
         setIsLoading(true);
+        settype("success")
         setTimeout(() => {
             setIsLoading(false);
             localStorage.setItem("userdetails", JSON.stringify(formData))
@@ -80,7 +81,7 @@ export default function SignupPage() {
         else {
 
             onToggle()
-            settype("success")
+            
             hola()
             updateFormdata({
                 username: "",
