@@ -37,7 +37,7 @@ export default function JoinSparksAmerica() {
 
                     </Text>
                     <Center minW={"100%"}>
-                        <Link href="https://spark360prodstorage.blob.core.windows.net/publicfiles/2022%20SparkAmerica%20Toolkit.pdf">
+                        <Link href="https://drive.google.com/file/d/1HKJ_lnhQpU5p_1c36MoA_O_vkRgjonR7/view?usp=sharing">
                             <Button _hover={{ bg: 'rgba(255,105,0,1)' }} variant={"outline"} w={'315px'} h="46px" >
                                 <CheckIcon />
                                 {/* <img src="https://www.flaticon.com/free-icons/toolbox" alt="toolbox icons" /> */}

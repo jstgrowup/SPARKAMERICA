@@ -79,9 +79,9 @@ export default function SignupPage() {
         }
         else {
 
-            hola()
             onToggle()
             settype("success")
+            hola()
             updateFormdata({
                 username: "",
                 email: "",

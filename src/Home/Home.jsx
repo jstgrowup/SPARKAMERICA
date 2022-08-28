@@ -1,7 +1,5 @@
 import { Flex } from '@chakra-ui/react'
 import React from 'react'
-
-
 import SparkCities from './SparkCities'
 import BelowNav from './BelowNav'
 import SomethingForEveryone from './SomethingForEveryone'
@@ -16,12 +14,6 @@ document.title="HOME - SparkAmerica"
       <SomethingForEveryone />
       <PeopleOne />
       <HomeFooter />
-
-
-
-
-
-
     </Flex>
   )
 }

@@ -8,8 +8,8 @@ export default function SomethingForEveryone() {
 
                 <Flex direction={"column"} align="center">
                     <Box maxW={"80%"}  >
-                        <Heading fontWeight="weight">SOMETHING FOR EVERYONE</Heading>
-                        <Text noOfLines={[5, 4, 2]} >
+                        <Heading fontWeight="weight" color={"white"}>SOMETHING FOR EVERYONE</Heading>
+                        <Text noOfLines={[5, 4, 2]} color={"red"} >
                             SparkAmerica is designed to fit everyone, with a range of activities that anyone can participate in - from healthy eating to financial fitness to active minutes
                             challenges. SparkAmerica strives to be inclusive because we believe that everyone deserves the opportunity to be fit and healthy.
 
