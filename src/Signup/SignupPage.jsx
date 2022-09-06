@@ -53,6 +53,7 @@ export default function SignupPage() {
 
     }
     const hola = () => {
+        
         setIsLoading(true);
         settype("success")
         setTimeout(() => {
