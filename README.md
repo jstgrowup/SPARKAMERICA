@@ -9,7 +9,7 @@ This is the project we tried to clone the website Time camp (https://www.timecam
 
 - ### Landing Page
 
-  ![Landing Page](https://i.ibb.co/27bSjG7/Screenshot-254.png)
+  ![Landing Page]([https://i.ibb.co/27bSjG7/Screenshot-254.png](https://user-images.githubusercontent.com/40628582/194738750-2cf5f132-cc8e-4242-8688-cbc57f2699cb.mp4))
   ​
 
 - ## Features Page
