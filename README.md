@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Time Camp Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Summary
 
-## Available Scripts
+This is the project we tried to clone the website Time camp (https://www.timecamp.com) we were a team of 5 people who have contibuted in this project. Time Camp is a is a web-based application and is dedicated either to freelancers or teams, it automates the processes connected to project and task management by the use of automatic time tracking.
+​
 
-In the project directory, you can run:
+## Screenshots
 
-### `npm start`
+- ### Landing Page
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  ![Landing Page](https://i.ibb.co/27bSjG7/Screenshot-254.png)
+  ​
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- ## Features Page
 
-### `npm test`
+  ![Features Page](https://i.ibb.co/SPcv0LL/Screenshot-255.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- ## Pricing Page
 
-### `npm run build`
+![Pricing Page](https://i.ibb.co/7NpXm7H/Screenshot-256.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- ## Login Page
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Login Page](https://i.ibb.co/89BnJrW/Screenshot-257.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- ## Signup Page
 
-### `npm run eject`
+![Signup Page](https://i.ibb.co/fCsTyZW/Screenshot-258.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- ## Dashboard Page
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Dashboard Page](https://i.ibb.co/d07Tw59/Screenshot-259.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Features
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- ## Sign up and Login Page
+  This website allows users to create their own account and sign in using the required email id and passowrd. If the required details are missing, the user won't be able to login into the website. Without the users signed in, the user would not be able access the dashboard page.
+- ## Home page
+  The landing page is the most important page of any website. It helps the user navigate through all the different pages and get the informations.
+- ## Features page
+  All the Features pages provide the list of all the avaiable features that are available to a certain category.
+- ## Pricing page
+  Pricing page has all the information about all the individual Features along with there respected prices
+- ## Dashboard page
+  After the user is logged in he/she will be able to get the access to the dashboard page where the user can add the tasks as well as delete it and add the time as well if the user wants to logout of the page there is a logout button as well and the user will be redirected to the login page.
+  ​
 
-## Learn More
+# Tech Stacks
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- CSS
+- JavaScript
+- ChakraUI
+- BootStarp
+- Redux
+- React
+- Google-Firebase
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Authors
 
-### Code Splitting
+- [@Sriram Boksa](https://github.com/ssksds)
+- [@Subham Dey](https://github.com/jstgrowup)
+- [@Apurba Adhikary](https://github.com/itsApurba)
+- [@Shivam Maurya](https://github.com/shivam0626)
+- [@Swapnil Kushwaha](https://github.com/Swapnil-kus-1503)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  ​
