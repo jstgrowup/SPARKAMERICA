@@ -1,4 +1,4 @@
-# Time Camp Clone
+# Spark America Clone
 
 # Summary
 
