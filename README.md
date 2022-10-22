@@ -9,7 +9,10 @@ This is the project we tried to clone the website Time camp (https://www.timecam
 
 - ### Landing Page
 
-  ![Landing Page](https://user-images.githubusercontent.com/40628582/194738750-2cf5f132-cc8e-4242-8688-cbc57f2699cb.mp4)
+![Landing Page](https://user-images.githubusercontent.com/40628582/194738750-2cf5f132-cc8e-4242-8688-cbc57f2699cb.mp4)
+
+- #### This website allows users to create their own account and sign in using the required email id and passowrd. If the required details are missing, the user won't be able to login into the website. Without the users signed in, the user would not be able access the dashboard page.
+
   ​
 
 - ## Join the Movement Page
@@ -33,11 +36,11 @@ This is the project we tried to clone the website Time camp (https://www.timecam
 ![Contact Us Page](https://user-images.githubusercontent.com/40628582/197356711-3d92bfb6-328d-44ce-bfce-8d16ee2a6eca.png)
 
 - ## Register Page
-![Register Page ](https://user-images.githubusercontent.com/40628582/197356794-3f592120-a10c-43a8-8557-cd5180d4d595.png)
+  ![Register Page ](https://user-images.githubusercontent.com/40628582/197356794-3f592120-a10c-43a8-8557-cd5180d4d595.png)
 - ## Sign Up Page
-![Sign Up Page ](https://user-images.githubusercontent.com/40628582/197356876-ccc75593-9e43-4b92-89e0-65a443a99818.png)
+  ![Sign Up Page ](https://user-images.githubusercontent.com/40628582/197356876-ccc75593-9e43-4b92-89e0-65a443a99818.png)
 - ## Forgot Email and Thakyou Page
-![Forgot Email and Thakyou Page](https://user-images.githubusercontent.com/40628582/197356951-cf15250a-b23d-488e-a0e1-b868b05b721b.png)
+  ![Forgot Email and Thakyou Page](https://user-images.githubusercontent.com/40628582/197356951-cf15250a-b23d-488e-a0e1-b868b05b721b.png)
 
 # Features
 
