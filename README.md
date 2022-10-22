@@ -12,7 +12,7 @@ In this project i made a clone of SparkAmerica website it is an American health 
 ![Landing Page](https://user-images.githubusercontent.com/40628582/194738750-2cf5f132-cc8e-4242-8688-cbc57f2699cb.mp4)
 - ## Join the Movement Page
 
-  ![Join the Movement Page](https://user-images.githubusercontent.com/40628582/197356504-8129bd14-a0d0-4deb-9b38-88402827bac7.png)
+![Join the Movement Page](https://user-images.githubusercontent.com/40628582/197356504-8129bd14-a0d0-4deb-9b38-88402827bac7.png)
 
 - ## Partners Page
 
@@ -36,17 +36,16 @@ In this project i made a clone of SparkAmerica website it is an American health 
 - #### Through this page you will be able to reach out to the official team and if you have any query regarding how to join the movement by providing the your mail ID, name and the query you have this page is also responsive as well
 - ## Register Page
 
-  ![Register Page ](https://user-images.githubusercontent.com/40628582/197356794-3f592120-a10c-43a8-8557-cd5180d4d595.png)
+![Register Page ](https://user-images.githubusercontent.com/40628582/197356794-3f592120-a10c-43a8-8557-cd5180d4d595.png)
 
 - ## Sign Up Page
   ![Sign Up Page ](https://user-images.githubusercontent.com/40628582/197356876-ccc75593-9e43-4b92-89e0-65a443a99818.png)
-  - #### Through this page you can signup to our website and register yourself to our movement this page is also responsive as well
+- #### Through this page you can signup to our website and register yourself to our movement this page is also responsive as well
 - ## Forgot Email and Thakyou Page
   ![Forgot Email and Thakyou Page](https://user-images.githubusercontent.com/40628582/197356951-cf15250a-b23d-488e-a0e1-b868b05b721b.png)
 - #### Incase you havent recieved any email during signup you can request a mail again to get the verification email
 
 # Tech Stacks
-
 - CSS
 - JavaScript
 - ChakraUI
