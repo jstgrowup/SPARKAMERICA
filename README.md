@@ -55,7 +55,7 @@ In this project i made a clone of SparkAmerica website it is an American health 
 - React-Router-DOM
 - React icons
 
-#Steps 
+# Steps to run in your system
 1. git clone <Repo link>
 2. cd sparkAmerica
 3. npm install
