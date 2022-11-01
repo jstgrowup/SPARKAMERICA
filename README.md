@@ -9,7 +9,7 @@ In this project i made a clone of SparkAmerica website it is an American health 
 
 - ### Landing Page
 
-![Landing Page](https://user-images.githubusercontent.com/40628582/194738750-2cf5f132-cc8e-4242-8688-cbc57f2699cb.mp4)
+![Landing Page](https://user-images.githubusercontent.com/40628582/199296706-85d69e66-12ff-450d-a719-e38f325c40e6.png)
 - ## Join the Movement Page
 
 ![Join the Movement Page](https://user-images.githubusercontent.com/40628582/197356504-8129bd14-a0d0-4deb-9b38-88402827bac7.png)
